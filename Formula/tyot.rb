@@ -5,13 +5,13 @@
 class Tyot < Formula
   desc "Extract YouTube video metadata and transcript to Markdown."
   homepage "https://github.com/dev-maicondmenezes/transcript-tube-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.0/tyot_0.1.0_darwin_amd64.tar.gz"
-      sha256 "18980e7fbdba1650b16bbe504833f1fe7f63e4b45628f12b3eeea6ede702e015"
+      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.1/tyot_0.1.1_darwin_amd64.tar.gz"
+      sha256 "82203c922ec2c2fbfa5c8528ba2bb590b3e47ae213c743c2807b28aa1394fd38"
 
       define_method(:install) do
         bin.install "tyot"
@@ -23,8 +23,8 @@ class Tyot < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.0/tyot_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f348da9783b47739965837d4f5e92a56059d1911e9089f55d3b0620638ce566a"
+      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.1/tyot_0.1.1_darwin_arm64.tar.gz"
+      sha256 "5b7dae49e23cd1652a273c821cf967292cb46a7203cf005422540cb60e34645c"
 
       define_method(:install) do
         bin.install "tyot"
@@ -39,8 +39,8 @@ class Tyot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.0/tyot_0.1.0_linux_amd64.tar.gz"
-      sha256 "bb5dee4f64c6023e196d0a6db040d08d0866cb55041c2a26f5cd7a5ce698d041"
+      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.1/tyot_0.1.1_linux_amd64.tar.gz"
+      sha256 "6e282dd53b3aa462429508df0f34b72d9f0cd07f840bcc40c7dea40da2fd9aeb"
       define_method(:install) do
         bin.install "tyot"
         man1.install "docs/man/tyot.1"
@@ -51,8 +51,8 @@ class Tyot < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.0/tyot_0.1.0_linux_arm64.tar.gz"
-      sha256 "b3970cb09c7ef01e39cee2278af381b93f0d4b3e2fcb42649b9942270014e062"
+      url "https://github.com/dev-maicondmenezes/transcript-tube-cli/releases/download/v0.1.1/tyot_0.1.1_linux_arm64.tar.gz"
+      sha256 "8cc34d267627b95056c664fce3f6540e8083036a63960e18e5419578c7f3a673"
       define_method(:install) do
         bin.install "tyot"
         man1.install "docs/man/tyot.1"
